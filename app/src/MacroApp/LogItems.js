@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import FoodForm from "./FoodForm/FoodForm";
-import FoodList from "./FoodList/FoodList";
-import useFoodState from "../../hooks/useFoodState";
+import FoodForm from "./LogItems/FoodForm";
+import FoodList from "./LogItems/FoodList";
+import useFoodState from "../hooks/useFoodState";
 
 const LogItems = (props) => {
   // const initialFoods = JSON.parse(window.localStorage.getItem("foods") || []);

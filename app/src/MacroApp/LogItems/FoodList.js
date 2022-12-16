@@ -1,6 +1,6 @@
 import React from "react";
-import * as mui from "../../../mui";
-import Food from "./Food/Food";
+import * as mui from "../../mui";
+import Food from "./FoodList/Food";
 
 const FoodList = (props) => {
   // let totalAmountMacrosforFoods = 0;

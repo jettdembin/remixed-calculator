@@ -1,5 +1,5 @@
 import React from "react";
-import "../GoalOptions.css";
+import "./GoalOptions.css";
 
 const GoalBtn = (props) => {
   let id = props.id;

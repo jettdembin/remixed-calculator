@@ -1,8 +1,7 @@
 import React from "react";
-import "../../GoalCalculation/GoalOptions/GoalOptions.css";
 import TextField from "@mui/material/TextField";
-import useFormState from "../../../hooks/useFormState";
-import useFormDigitState from "../../../hooks/useFormDigitState";
+import useFormState from "../../hooks/useFormState";
+import useFormDigitState from "../../hooks/useFormDigitState";
 
 const FoodForm = (props) => {
   const [value, handleFoodChange, reset] = useFormState("");

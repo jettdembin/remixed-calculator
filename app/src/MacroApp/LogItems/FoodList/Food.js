@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import * as mui from "../../../../mui";
-import EditFoodForm from "./EditFoodForm";
+import * as mui from "../../../mui";
+import EditFoodForm from "./Food/EditFoodForm";
 
 const Food = (props) => {
   const food = props.food;

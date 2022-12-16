@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import * as mui from "../mui";
-import GoalCalculation from "./GoalCalculation/GoalCalculation";
-import LogItems from "./LogItems/LogItems";
-import useFormDigitState from "../hooks/useFormDigitState";
+import * as mui from "../src/mui";
+import GoalCalculation from "../src/MacroApp/GoalCalculation";
+import LogItems from "../src/MacroApp/LogItems";
+import useFormDigitState from "../src/hooks/useFormDigitState";
 
 const App = () => {
   //CONTEXT API REFACTOR BRANCH
 
-  const adjustments = [
+  const adjustments: [{}] = [
     {
       carbAdjusted: 0,
       proteinAdjusted: 0,
@@ -15,7 +15,7 @@ const App = () => {
       caloriesAdjusted: 0,
     },
   ];
-  const initialTotalsMacros = [
+  const initialTotalsMacros: [{}] = [
     {
       carb: 0,
       protein: 0,
@@ -83,7 +83,7 @@ const App = () => {
 
   //Set State Functions
   //1
-  const toggleGoal = (goal) => {
+  const toggleGoal = (goal: number) => {
     switch (goal) {
       case 12:
         setGoal("Cut");
@@ -100,12 +100,17 @@ const App = () => {
   };
 
   //2
-  const updateCal = (id) => {
+  const updateCal = (id: number) => {
     handleCalculation(Number(weight) * id);
   };
 
   //3
-  const updateMacros = (carb, protein, fat, meals) => {
+  const updateMacros = (
+    carb: number,
+    protein: number,
+    fat: number,
+    meals: number
+  ) => {
     adjustMacros([
       {
         carbAdjusted: Math.round(carb / meals),
@@ -117,7 +122,7 @@ const App = () => {
   };
 
   //4
-  const updateAll = (total, macro) => {
+  const updateAll = (total: string, macro: number) => {
     if (initialTotalsMacros[0].hasOwnProperty(macro)) {
       initialTotalsMacros[0][`${macro}`] = total;
       setTotals(initialTotalsMacros);

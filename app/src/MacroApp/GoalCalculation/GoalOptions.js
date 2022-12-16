@@ -1,6 +1,6 @@
 import React from "react";
-import "./GoalOptions.css";
-import GoalBtn from "./GoalBtn/GoalBtn";
+import "./GoalOptions/GoalOptions.css";
+import GoalBtn from "./GoalOptions/GoalBtn";
 
 const GoalOptions = (props) => {
   return (

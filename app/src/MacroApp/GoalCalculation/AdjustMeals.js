@@ -1,6 +1,6 @@
 import React from "react";
-import "../GoalOptions/GoalOptions.css";
-import MealAmount from "./MealAmount/MealAmount";
+import "./GoalOptions/GoalOptions.css";
+import MealAmount from "./AdjustMeals/MealAmount";
 
 function AdjustMeals(props) {
   return (
